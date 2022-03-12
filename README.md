@@ -59,6 +59,7 @@ Netsh Advfirewall Firewall Add Rule Name="Disable UDP Port 135,137,138,139,445,5
 Dir=In Action=Block Protocol=UDP Localport=135,137,138,139,445,593,1025,3389
 
 PowerShell Command
+
 New-NetFirewallRule -DisplayName "Disable TCP Port 135" 
 -Direction Inbound -LocalPort 135 -Protocol TCP -Action Block
 
